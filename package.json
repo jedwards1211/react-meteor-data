@@ -1,6 +1,6 @@
 {
   "name": "react-meteor-data",
-  "version": "0.2.9-beta.0",
+  "version": "0.2.9",
   "description": "Meteor packages for a great React developer experience",
   "main": "lib/index.js",
   "scripts": {
