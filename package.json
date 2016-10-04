@@ -1,0 +1,38 @@
+{
+  "name": "react-meteor-data",
+  "version": "0.2.9-beta.0",
+  "description": "Meteor packages for a great React developer experience",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rimraf lib && babel src/ --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jedwards1211/react-meteor-data.git"
+  },
+  "keywords": [
+    "meteor",
+    "react"
+  ],
+  "author": "Andy Edwards",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jedwards1211/react-meteor-data/issues"
+  },
+  "homepage": "https://github.com/jedwards1211/react-meteor-data#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "react-addons-pure-render-mixin": "^0.14.0 || ^15.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.3.2",
+    "react-addons-pure-render-mixin": "^15.3.2",
+    "rimraf": "^2.5.4"
+  }
+}
