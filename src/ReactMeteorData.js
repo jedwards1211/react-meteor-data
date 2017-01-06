@@ -1,3 +1,6 @@
+const {Meteor} = Package.meteor
+const {Tracker} = Package.tracker
+
 const ReactMeteorData = {
   componentWillMount() {
     this.data = {};
