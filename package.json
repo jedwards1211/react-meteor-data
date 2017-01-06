@@ -24,7 +24,7 @@
   "dependencies": {},
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0",
-    "react-addons-pure-render-mixin": "^0.14.0 || ^15.0.0"
+    "react-addons-pure-render-mixin": "^15.4.2"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
