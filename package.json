@@ -33,6 +33,6 @@
     "babel-preset-react": "^6.16.0",
     "react": "^15.3.2",
     "react-addons-pure-render-mixin": "^15.3.2",
-    "rimraf": "^2.5.4"
+    "rimraf": "^2.6.1"
   }
 }
