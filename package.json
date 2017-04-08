@@ -23,7 +23,7 @@
   "homepage": "https://github.com/jedwards1211/react-meteor-data#readme",
   "dependencies": {},
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0",
+    "react": "^15.5.0",
     "react-addons-pure-render-mixin": "^0.14.0 || ^15.0.0"
   },
   "devDependencies": {
