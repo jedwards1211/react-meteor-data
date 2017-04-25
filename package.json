@@ -1,6 +1,6 @@
 {
   "name": "react-meteor-data",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "Meteor packages for a great React developer experience",
   "main": "lib/index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/jedwards1211/react-meteor-data#readme",
   "dependencies": {},
   "peerDependencies": {
+    "create-react-class": "15.5.1",
     "react": "^0.14.0 || ^15.0.0",
     "react-addons-pure-render-mixin": "^0.14.0 || ^15.0.0"
   },
