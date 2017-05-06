@@ -1,3 +1,8 @@
+# This is not the official `react-meteor-data` package!
+
+The official Atmosphere package is at https://github.com/meteor/react-packages/tree/devel/packages/react-meteor-data.
+This is an unofficial npm package version of it.
+
 ## `react-meteor-data`
 
 This package provides an integration between React and [`tracker`](https://atmospherejs.com/meteor/tracker), Meteor's reactive data system.
