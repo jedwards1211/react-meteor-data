@@ -2,39 +2,20 @@
  * Container helper using react-meteor-data.
  */
 
-import createClass from 'create-react-class';
+import { Meteor } from 'meteor/meteor';
 import React from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import connect from './ReactMeteorData.js';
 
-import ReactMeteorData from './ReactMeteorData';
+let hasDisplayedWarning = false;
 
-export default function createContainer(options = {}, Component) {
-  let expandedOptions = options;
-  if (typeof options === 'function') {
-    expandedOptions = {
-      getMeteorData: options,
-    };
-  }
+export default function createContainer(options, Component) {
+    if (!hasDisplayedWarning && Meteor.isDevelopment) {
+        console.warn(
+            'Warning: createContainer was deprecated in react-meteor-data@0.2.13. Use withTracker instead.\n' +
+            'https://github.com/meteor/react-packages/tree/devel/packages/react-meteor-data#usage',
+        );
+        hasDisplayedWarning = true;
+    }
 
-  const {
-    getMeteorData,
-    pure = true,
-  } = expandedOptions;
-
-  const mixins = [ReactMeteorData];
-  if (pure) {
-    mixins.push(PureRenderMixin);
-  }
-
-  /* eslint-disable react/prefer-es6-class */
-  return createClass({
-    displayName: 'MeteorDataContainer',
-    mixins,
-    getMeteorData() {
-      return getMeteorData(this.props);
-    },
-    render() {
-      return <Component {...this.props} {...this.data} />;
-    },
-  });
+    return connect(options)(Component);
 }
